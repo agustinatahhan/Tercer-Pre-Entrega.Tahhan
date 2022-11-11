@@ -487,12 +487,24 @@ img{
 
 .carrito-titulo{
     justify-self: start;
+    font-family: var(--fuenteLogo);
 }
 
 .carrito-boton{
     cursor: pointer;
 }
 
+@media (min-width: 768px) {
+    .ventanaCarrito > .contenido-carrito{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: 70%;
+        margin: 10px;
+    }    
+    
+}
 .ventanaCarrito > .contenido-carrito{
     display: flex;
     flex-direction: row;
@@ -503,28 +515,96 @@ img{
 }
 
 .ventanaCarrito > div > img{
-    height: 120px;
-    width: 120px;
+    height: 50px;
+    width: 50px;
+}
+
+
+@media (min-width: 768px) {
+    .ventanaCarrito > div > img{
+        height: 120px;
+        width: 120px;
+    }
 }
 
 .borrar-producto{
     cursor: pointer;
-    font-size: 3rem;
+    font-size: 1rem;
 }
 
-.total-carrito{
-    font-size: 25px;
-    padding: 20px;
-    text-align: center;
-    padding-top: 20px;
+@media (min-width: 768px) {
+    .borrar-producto{
+        cursor: pointer;
+        font-size: 3rem;
+    }
+    
 }
+
+.tottal-carrito{
+    font-size: 15px;
+    padding: 10px;
+    text-align: center;
+    padding-top: 10px;
+    font-family: var(--fuenteLogo);
+    
+
+}
+@media (min-width: 768px) {
+    .total-carrito{
+        font-size: 28px;
+        padding: 20px;
+        text-align: center;
+        padding-top: 20px;
+        font-family: var(--fuenteLogo);
+    }
+    
+}
+
 
 .restar{
     cursor: pointer;
-    font-size: 5rem;
+    font-size: 2rem;
+}
+
+@media (min-width: 768px) {
+    .restar{
+        cursor: pointer;
+        font-size: 5rem;
+    }
 }
 
 .sumar{
     cursor: pointer;
-    font-size: 4rem;
+    font-size: 2rem;
+}
+
+@media (min-width: 768px) {
+    .sumar{
+        cursor: pointer;
+        font-size: 4rem;
+    }
+    
+}
+
+.botonFinalizarCompra{
+    width: 30rem;
+    background-color: var(--blanco);
+    border-radius: .5rem;
+    border-color: 2rem solid var(--primario);
+    color: #000000;
+    text-align: center;
+    font-family: var(--fuenteItems);
+    margin-bottom: 3rem;
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+.nombre{
+    margin: 1rem;
+
+}
+
+#map {
+	height: 500px;
+	width: 100%;
 }
